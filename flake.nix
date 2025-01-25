@@ -21,6 +21,15 @@
       in
       {
         packages = rec {
+          emmet-helper = pkgs.buildNpmPackage {
+            pname = "emmet-helper";
+            version = "1.0.0";
+            src = self;
+            npmDepsHash = "sha256-mF4RNqKyIVjBFYjL8ZFst7hc29UxxWJnQLTzuCQW+b4=";
+            npmInstallFlags = [ "--omit=dev" ];
+            dontNpmBuild = true;
+          };
+          default = emmet-helper;
         };
 
         devShells.default = pkgs.mkShell {
