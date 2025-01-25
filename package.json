@@ -8,6 +8,9 @@
     "test": "node ./test/*.js",
     "test:watch": "node --watch-path=./src --watch-path=./test --watch ./test/*.js"
   },
+  "bin": {
+    "emmet-helper": "./src/cli.js"
+  },
   "keywords": [],
   "author": "",
   "license": "GPL-v3-or-later",
