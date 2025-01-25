@@ -1,0 +1,23 @@
+{
+  "name": "@trickypr/emmet-helper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "small cli tool for expanding emmet expressions",
+  "main": "src/lib.js",
+  "scripts": {
+    "test": "node ./test/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-v3-or-later",
+  "dependencies": {
+    "@emmetio/abbreviation": "^2.3.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.10"
+  }
+}
