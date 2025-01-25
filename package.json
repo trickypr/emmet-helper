@@ -5,7 +5,8 @@
   "description": "small cli tool for expanding emmet expressions",
   "main": "src/lib.js",
   "scripts": {
-    "test": "node ./test/*.js"
+    "test": "node ./test/*.js",
+    "test:watch": "node --watch-path=./src --watch-path=./test --watch ./test/*.js"
   },
   "keywords": [],
   "author": "",
